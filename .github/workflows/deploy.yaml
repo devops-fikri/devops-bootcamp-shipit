@@ -14,8 +14,8 @@ jobs:
     - run: npm run-build
     - uses: actions/upload-pages-artifact@v5
       with:
-        path: launchpad/workflow_dist
-    - uses: actions/ deploy-pages@v5
+        path: launchpad/dist
+    - uses: actions/deploy-pages@v5
 
 permissions:
    pages: write
